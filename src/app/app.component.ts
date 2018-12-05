@@ -3,12 +3,17 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+//import { HomePage } from '../pages/home/home';
+//import { TwoPage } from '../pages/two/two';
+import { DataPage } from '../pages/data/data';
+import { LoginPage } from '../pages/login/login';
+import { StoragePage } from '../pages/storage/storage';
 import { HomePage } from '../pages/home/home';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = StoragePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
